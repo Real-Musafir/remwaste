@@ -19,8 +19,8 @@ const steps = [
 
 function ItemHeader({ currentStep }) {
   return (
-    <div className="overflow-x-auto">
-      <div className="flex items-center mt-10 whitespace-nowrap">
+    <div className="overflow-x-auto w-full">
+      <div className="flex items-center mt-10 justify-center whitespace-nowrap">
         {steps.map((step, index) => {
           const isActive = index <= currentStep;
           const isActiveBar = index <= currentStep - 2;

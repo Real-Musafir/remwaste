@@ -6,7 +6,7 @@ import ItemHeader from "./component/ItemHeader.jsx";
 
 function App() {
   return (
-    <div className=" w-full h-screen px-4">
+    <div className=" w-full h-screen px-4 justify-center">
       {/* header */}
       <ItemHeader currentStep={2} />
     </div>

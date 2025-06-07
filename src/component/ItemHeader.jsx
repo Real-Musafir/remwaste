@@ -1,48 +1,53 @@
 import React from "react";
 import {
-  Calendar,
-  CreditCard,
   MapPin,
-  Shield,
   Trash2,
   Truck,
+  Shield,
+  Calendar,
+  CreditCard,
 } from "lucide-react";
 
-function ItemHeader() {
+const steps = [
+  { icon: MapPin, label: "Postcode" },
+  { icon: Trash2, label: "Waste Type" },
+  { icon: Truck, label: "Select Skip" },
+  { icon: Shield, label: "Permit Check" },
+  { icon: Calendar, label: "Choose Date" },
+  { icon: CreditCard, label: "Payment" },
+];
+
+function ItemHeader({ currentStep = 2 }) {
   return (
-    <div className="flex justify-between align-items-center mt-10">
-      <MapPin className="text-blue-700" size={20} />
-      <p className="text-white text-lg">Postcode</p>
-      <div
-        style={{ height: "1px", width: "6%" }}
-        className="my-auto bg-blue-700"
-      />
-      <Trash2 size={20} />
-      <p className="text-white text-lg">Waste Type</p>
-      <div
-        style={{ height: "1px", width: "6%" }}
-        className=" my-auto bg-blue-700"
-      />
-      <Truck size={20} />
-      <p className="text-white text-lg">Select Skip</p>
-      <div
-        style={{ height: "1px", width: "6%" }}
-        className=" my-auto bg-blue-700"
-      />
-      <Shield size={20} />
-      <p className="text-white text-lg">Permit Check</p>
-      <div
-        style={{ height: "1px", width: "6%" }}
-        className=" my-auto bg-blue-700"
-      />
-      <Calendar size={20} />
-      <p className="text-white text-lg">Choose Date</p>
-      <div
-        style={{ height: "1px", width: "6%" }}
-        className=" my-auto bg-blue-700"
-      />
-      <CreditCard size={20} />
-      <p className="text-white text-lg">Payment</p>
+    <div className="flex justify-between items-center mt-10">
+      {steps.map((step, index) => {
+        const isActive = index <= currentStep;
+        const isActiveBar = index <= currentStep - 2;
+
+        return (
+          <React.Fragment key={index}>
+            <step.icon
+              className={isActive ? "text-blue-700" : "text-gray-500"}
+              size={20}
+            />
+            <p
+              className={
+                isActive ? "text-white text-lg" : "text-gray-400 text-lg"
+              }
+            >
+              {step.label}
+            </p>
+            {index !== steps.length - 1 && (
+              <div
+                style={{ height: "1px", width: "6%" }}
+                className={
+                  isActiveBar ? "my-auto bg-blue-700" : "my-auto bg-gray-500"
+                }
+              />
+            )}
+          </React.Fragment>
+        );
+      })}
     </div>
   );
 }

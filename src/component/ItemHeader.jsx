@@ -17,37 +17,41 @@ const steps = [
   { icon: CreditCard, label: "Payment" },
 ];
 
-function ItemHeader({ currentStep = 2 }) {
+function ItemHeader({ currentStep }) {
   return (
-    <div className="flex justify-between items-center mt-10">
-      {steps.map((step, index) => {
-        const isActive = index <= currentStep;
-        const isActiveBar = index <= currentStep - 2;
+    <div className="overflow-x-auto">
+      <div className="flex items-center mt-10 whitespace-nowrap">
+        {steps.map((step, index) => {
+          const isActive = index <= currentStep;
+          const isActiveBar = index <= currentStep - 2;
 
-        return (
-          <React.Fragment key={index}>
-            <step.icon
-              className={isActive ? "text-blue-700" : "text-gray-500"}
-              size={20}
-            />
-            <p
-              className={`text-lg ${
-                isActive ? "text-white" : "text-gray-400"
-              } hidden sm:block`}
-            >
-              {step.label}
-            </p>
-            {index !== steps.length - 1 && (
-              <div
-                style={{ height: "1px", width: "6%" }}
-                className={
-                  isActiveBar ? "my-auto bg-blue-700" : "my-auto bg-gray-500"
-                }
-              />
-            )}
-          </React.Fragment>
-        );
-      })}
+          return (
+            <React.Fragment key={index}>
+              <div className="flex items-center space-x-2 flex-shrink-0">
+                <step.icon
+                  className={isActive ? "text-blue-700" : "text-gray-500"}
+                  size={20}
+                />
+                <p
+                  className={`text-lg ${
+                    isActive ? "text-white" : "text-gray-400"
+                  }`}
+                >
+                  {step.label}
+                </p>
+              </div>
+              {index !== steps.length - 1 && (
+                <div
+                  style={{ height: "1px", width: "6%" }}
+                  className={`my-auto mx-2 flex-shrink-0 ${
+                    isActiveBar ? "bg-blue-700" : "bg-gray-500"
+                  }`}
+                />
+              )}
+            </React.Fragment>
+          );
+        })}
+      </div>
     </div>
   );
 }

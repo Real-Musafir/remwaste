@@ -31,9 +31,9 @@ function ItemHeader({ currentStep = 2 }) {
               size={20}
             />
             <p
-              className={
-                isActive ? "text-white text-lg" : "text-gray-400 text-lg"
-              }
+              className={`text-lg ${
+                isActive ? "text-white" : "text-gray-400"
+              } hidden sm:block`}
             >
               {step.label}
             </p>

@@ -23,7 +23,13 @@ function App() {
         {skipData?.map((item, index) => (
           <div
             key={index}
-            onClick={() => setSelectedItem(item)}
+            onClick={() => {
+              if (selectedItem?.id === item.id) {
+                setSelectedItem(null);
+              } else {
+                setSelectedItem(item);
+              }
+            }}
             className={`cursor-pointer  relative flex flex-col p-6 bg-[#1a1a1a] text-white border border-[#2a2a2a] rounded-xl shadow hover:shadow-xl transition-shadow overflow-hidden ${
               selectedItem?.id === item?.id
                 ? "border-blue-700 border-2"
@@ -59,8 +65,15 @@ function App() {
             </div>
 
             {/* */}
-            <div className="mt-4 cursor-pointer w-full bg-[#2a2a2a]  hover:bg-[#3a3a3a] text-white py-3 rounded-lg text-md font-medium transition-colors">
-              Select This Skip →
+            <div
+              // onClick={() => setSelectedItem(item)}
+              className={`mt-4 cursor-pointer w-full bg-[#2a2a2a]   text-white py-3 rounded-lg text-md font-medium transition-colors ${
+                selectedItem?.id === item.id
+                  ? "bg-blue-700 hover:bg-blue-800"
+                  : "hover:bg-[#3a3a3a]"
+              }`}
+            >
+              {selectedItem?.id === item.id ? "Selected" : "Select This Skip →"}
             </div>
           </div>
         ))}

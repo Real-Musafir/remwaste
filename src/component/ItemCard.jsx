@@ -1,10 +1,9 @@
 import React from "react";
 import { FileWarning, Slash, TriangleAlert } from "lucide-react";
 
-function ItemCard({ item, setSelectedItem, selectedItem, key }) {
+function ItemCard({ item, setSelectedItem, selectedItem }) {
   return (
     <div
-      key={key}
       onClick={() => {
         if (selectedItem?.id === item.id) {
           setSelectedItem(null);

@@ -7,7 +7,7 @@ import { skipData } from "./shared/data.js";
 
 function App() {
   return (
-    <div className=" w-full  px-4 justify-center">
+    <div className=" w-full  px-4">
       {/* header */}
       <ItemHeader currentStep={2} />
 
@@ -39,20 +39,22 @@ function App() {
             </div>
 
             {/* Content */}
-            <div className="p-4 flex flex-col flex-grow justify-between">
-              <div>
-                <h3 className="text-lg font-bold mb-1">
-                  {item?.yards} Yard Skip
-                </h3>
-                <p className="text-sm text-gray-400 mb-2">14 day hire period</p>
-                <p className="text-xl font-bold text-blue-500">
-                  £{item?.value}
-                </p>
-              </div>
 
-              <button className="mt-4 w-full bg-[#2a2a2a] hover:bg-[#3a3a3a] text-white py-2 rounded-lg text-sm font-medium transition-colors">
-                Select This Skip →
-              </button>
+            <div className="mt-5 ">
+              <h3 className="text-lg font-bold  text-start  mb-1">
+                {item?.yards} Yard Skip
+              </h3>
+              <p className="text-sm text-start text-gray-400 mb-2">
+                14 day hire period
+              </p>
+              <p className="text-xl mt-6 font-bold text-start text-blue-700">
+                £{item?.value}
+              </p>
+            </div>
+
+            {/* */}
+            <div className="mt-4 cursor-pointer w-full bg-[#2a2a2a]  hover:bg-[#3a3a3a] text-white py-3 rounded-lg text-md font-medium transition-colors">
+              Select This Skip →
             </div>
           </div>
         ))}

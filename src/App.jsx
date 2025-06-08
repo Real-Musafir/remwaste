@@ -4,7 +4,7 @@ import "./App.css";
 
 import ItemHeader from "./component/ItemHeader.jsx";
 import { skipData } from "./shared/data.js";
-import { FileWarning, TriangleAlert } from "lucide-react";
+import { FileWarning, Slash, TriangleAlert } from "lucide-react";
 
 function App() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -44,10 +44,17 @@ function App() {
                 {item?.yards} Yards
               </span>
 
+              {/* Selected slash */}
+              {selectedItem?.id === item?.id && (
+                <div className="absolute top-3 right-1  text-white text-sm font-semibold px-3 py-1 rounded-full ">
+                  <Slash className="text-blue-700" size={18} />
+                </div>
+              )}
+
               <img
                 src={item?.url}
                 alt={`${item?.yards} Yard Skip`}
-                className="w-full h-full object-cover rounded-md"
+                className="w-full z-2 h-full object-cover rounded-md"
               />
 
               {!item?.isAllowedRoad && (

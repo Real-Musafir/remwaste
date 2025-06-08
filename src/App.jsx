@@ -4,6 +4,7 @@ import "./App.css";
 
 import ItemHeader from "./component/ItemHeader.jsx";
 import { skipData } from "./shared/data.js";
+import { FileWarning, TriangleAlert } from "lucide-react";
 
 function App() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -48,6 +49,15 @@ function App() {
                 alt={`${item?.yards} Yard Skip`}
                 className="w-full h-full object-cover rounded-md"
               />
+
+              {!item?.isAllowedRoad && (
+                <div className=" absolute  top-55 left-9 flex align-items-center bg-black px-3 py-1 rounded-lg text-yellow-500">
+                  <TriangleAlert className=" m-auto" size={18} />
+                  <span className=" text-yellow-500  text-sm  px-3 py-1 rounded-full z-10">
+                    Not Allowed On The Road
+                  </span>
+                </div>
+              )}
             </div>
 
             {/* Content */}

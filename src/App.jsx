@@ -6,6 +6,7 @@ import ItemHeader from "./component/ItemHeader.jsx";
 import { skipData } from "./shared/data.js";
 
 function App() {
+  const [selectedItem, setSelectedItem] = useState(null);
   return (
     <div className=" w-full  px-4">
       {/* header */}
@@ -22,7 +23,12 @@ function App() {
         {skipData?.map((item, index) => (
           <div
             key={index}
-            className="cursor-pointer hover:border-blue-900 relative flex flex-col p-6 bg-[#1a1a1a] text-white border border-[#2a2a2a] rounded-xl shadow hover:shadow-xl transition-shadow overflow-hidden"
+            onClick={() => setSelectedItem(item)}
+            className={`cursor-pointer  relative flex flex-col p-6 bg-[#1a1a1a] text-white border border-[#2a2a2a] rounded-xl shadow hover:shadow-xl transition-shadow overflow-hidden ${
+              selectedItem?.id === item?.id
+                ? "border-blue-700 border-2"
+                : "hover:border-blue-900"
+            }`}
           >
             {/* Image */}
             <div className="w-full h-60 flex items-center justify-center overflow-hidden">

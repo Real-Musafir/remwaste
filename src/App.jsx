@@ -88,9 +88,9 @@ function App() {
               options and/or accessories may be featured at additional cost.
             </p>
 
-            <div className="md:flex justify-between w-full ">
+            <div className="md:flex justify-between w-full mt-4">
               <div className="flex justify-between items-center ">
-                <p className=" sm:text-white md:text-gray-400 md:text-md text-xl">
+                <p className=" sm:text-white md:text-gray-400 md:text-md text-lg">
                   {selectedItem.yards} Yard Skip
                 </p>
                 <div className="flex items-center mx-2">

@@ -74,7 +74,7 @@ function App() {
                 {item?.yards} Yard Skip
               </h3>
               <p className="text-sm text-start text-gray-400 mb-2">
-                14 day hire period
+                {item?.subtitle}
               </p>
               <p className="text-xl mt-6 font-bold text-start text-blue-700">
                 £{item?.value}
@@ -114,7 +114,9 @@ function App() {
                   <p className="text-2xl mx-3 font-semibold text-blue-700">
                     £{selectedItem.value}
                   </p>
-                  <p className="text-md text-gray-400">14 day hire</p>
+                  <p className="text-md text-gray-400">
+                    {selectedItem?.subtitle}
+                  </p>
                 </div>
               </div>
 

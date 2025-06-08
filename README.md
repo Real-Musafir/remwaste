@@ -1,29 +1,28 @@
 # 🚀 React + Tailwind CSS Starter
 
-This is a modern frontend project built using **React** and **Tailwind CSS**, designed for speed, scalability, and simplicity.
+This is a modern frontend project to redesign of https://wewantwaste.co.uk/ skip section using **React** and **Tailwind CSS**, designed for speed, scalability, and simplicity.
 
 ## 📁 Project Structure
 
 - **React**: Functional components with hooks
 - **Tailwind CSS**: Utility-first styling
 - **Vite / CRA**: Fast development build (specify which one you used)
-- **ESLint & Prettier**: Code quality and formatting (if applicable)
 
 ## 🧠 Project Approach
 
 - **Component-Driven Development**: UI is built using reusable, composable React components.
 - **Responsive Design**: Tailwind ensures mobile-first, responsive layout out of the box.
-- **Clean Codebase**: Code is modular, readable, and scalable.
+- **Clean Codebase**: Code is readable, and scalable.
 - **Atomic CSS**: Tailwind allows rapid prototyping without leaving HTML.
 
 ## 🛠️ Setup Instructions
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/Real-Musafir/remwaste.git
 
 # Navigate to the project directory
-cd your-project
+cd remwaste
 
 # Install dependencies
 npm install

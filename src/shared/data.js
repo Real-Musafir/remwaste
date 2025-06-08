@@ -11,7 +11,7 @@ export const skipData = [
     id: 2,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
-    value: "211",
+    value: "241",
     yards: "5",
     isAllowedRoad: true,
   },
@@ -20,7 +20,7 @@ export const skipData = [
     id: 3,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
-    value: "211",
+    value: "264",
     yards: "6",
     isAllowedRoad: true,
   },
@@ -28,7 +28,7 @@ export const skipData = [
     id: 4,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
-    value: "211",
+    value: "295",
     yards: "8",
     isAllowedRoad: true,
   },
@@ -36,7 +36,7 @@ export const skipData = [
     id: 5,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
-    value: "211",
+    value: "356",
     yards: "10",
     isAllowedRoad: false,
   },
@@ -44,7 +44,7 @@ export const skipData = [
     id: 6,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
-    value: "211",
+    value: "390",
     yards: "12",
     isAllowedRoad: false,
   },
@@ -52,7 +52,7 @@ export const skipData = [
     id: 7,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
-    value: "211",
+    value: "434",
     yards: "14",
     isAllowedRoad: false,
   },
@@ -60,7 +60,7 @@ export const skipData = [
     id: 8,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/16-yarder-skip.jpg",
 
-    value: "211",
+    value: "510",
     yards: "16",
     isAllowedRoad: false,
   },
@@ -68,15 +68,15 @@ export const skipData = [
     id: 9,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/20-yarder-skip.jpg",
 
-    value: "211",
+    value: "802",
     yards: "20",
     isAllowedRoad: false,
   },
   {
-    id: 9,
+    id: 10,
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/20-yarder-skip.jpg",
 
-    value: "211",
+    value: "877",
     yards: "40",
     isAllowedRoad: false,
   },

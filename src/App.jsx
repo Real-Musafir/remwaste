@@ -8,7 +8,7 @@ import { skipData } from "./shared/data.js";
 function App() {
   const [selectedItem, setSelectedItem] = useState(null);
   return (
-    <div className=" w-full  px-4">
+    <div className=" w-full pb-40 px-4">
       {/* header */}
       <ItemHeader currentStep={2} />
 

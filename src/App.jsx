@@ -22,7 +22,7 @@ function App() {
         {skipData?.map((item, index) => (
           <div
             key={index}
-            className="relative flex flex-col p-6 bg-[#1a1a1a] text-white border border-[#2a2a2a] rounded-xl shadow hover:shadow-xl transition-shadow overflow-hidden"
+            className="cursor-pointer hover:border-blue-900 relative flex flex-col p-6 bg-[#1a1a1a] text-white border border-[#2a2a2a] rounded-xl shadow hover:shadow-xl transition-shadow overflow-hidden"
           >
             {/* Image */}
             <div className="w-full h-60 flex items-center justify-center overflow-hidden">

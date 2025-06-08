@@ -53,7 +53,7 @@ function App() {
             {/* Content */}
 
             <div className="mt-5 ">
-              <h3 className="text-lg font-bold  text-start  mb-1">
+              <h3 className="text-xl font-bold  text-start  mb-1">
                 {item?.yards} Yard Skip
               </h3>
               <p className="text-sm text-start text-gray-400 mb-2">

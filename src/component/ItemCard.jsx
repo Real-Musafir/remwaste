@@ -38,7 +38,7 @@ function ItemCard({ item, setSelectedItem, selectedItem }) {
         />
 
         {!item?.isAllowedRoad && (
-          <div className=" absolute  top-55 left-9 flex align-items-center bg-black px-3 py-1 rounded-lg text-yellow-500">
+          <div className=" absolute z-3 top-55 left-9 flex align-items-center bg-black px-3 py-1 rounded-lg text-yellow-500">
             <TriangleAlert className=" m-auto" size={18} />
             <span className=" text-yellow-500  text-sm  px-3 py-1 rounded-full z-10">
               Not Allowed On The Road

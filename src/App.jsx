@@ -78,6 +78,41 @@ function App() {
           </div>
         ))}
       </div>
+
+      {selectedItem && (
+        <div className="fixed bottom-0 left-0 right-0 bg-[#1a1a1a] text-white px-6 py-4 border-t border-[#2a2a2a] shadow-md z-50">
+          <div className="max-w-6xl mx-auto flex flex-col justify-between items-center">
+            <p className="text-sm my-2 text-gray-400">
+              Imagery and information shown throughout this website may not
+              reflect the exact shape or size specification, colours may vary,
+              options and/or accessories may be featured at additional cost.
+            </p>
+
+            <div className="md:flex justify-between w-full ">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div className="flex items-center">
+                  <p className="text-md text-gray-400">
+                    {selectedItem.yards} Yard Skip
+                  </p>
+                  <p className="text-2xl mx-3 font-semibold text-blue-700">
+                    £{selectedItem.value}
+                  </p>
+                  <p className="text-md text-gray-400">14 day hire</p>
+                </div>
+              </div>
+
+              <div className="flex gap-2">
+                <div className="mt-4 sm:mt-0 cursor-pointer bg-[#2a2a2a]  text-white px-6 py-2 rounded-lg font-semibold transition">
+                  Back
+                </div>
+                <div className="mt-4 sm:mt-0 cursor-pointer bg-blue-700 hover:bg-blue-800 text-white px-6 py-2 rounded-lg font-semibold transition">
+                  Continue →
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

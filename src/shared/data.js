@@ -4,7 +4,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/4-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "4",
     isAllowedRoad: true,
   },
   {
@@ -12,7 +12,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "5",
     isAllowedRoad: true,
   },
 
@@ -21,7 +21,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "6",
     isAllowedRoad: true,
   },
   {
@@ -29,7 +29,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "8",
     isAllowedRoad: true,
   },
   {
@@ -37,7 +37,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "10",
     isAllowedRoad: false,
   },
   {
@@ -45,7 +45,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "12",
     isAllowedRoad: false,
   },
   {
@@ -53,7 +53,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/5-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "14",
     isAllowedRoad: false,
   },
   {
@@ -61,7 +61,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/16-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "16",
     isAllowedRoad: false,
   },
   {
@@ -69,7 +69,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/20-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "20",
     isAllowedRoad: false,
   },
   {
@@ -77,7 +77,7 @@ export const skipData = [
     url: "https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/20-yarder-skip.jpg",
 
     value: "211",
-    yards: "4 ",
+    yards: "40",
     isAllowedRoad: false,
   },
 ];

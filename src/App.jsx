@@ -22,19 +22,19 @@ function App() {
         {skipData?.map((item, index) => (
           <div
             key={index}
-            className="relative flex flex-col bg-[#1a1a1a] text-white border border-[#2a2a2a] rounded-xl shadow hover:shadow-xl transition-shadow overflow-hidden"
+            className="relative flex flex-col p-6 bg-[#1a1a1a] text-white border border-[#2a2a2a] rounded-xl shadow hover:shadow-xl transition-shadow overflow-hidden"
           >
-            {/* Badge */}
-            <span className="absolute top-4 right-4 bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-full z-10">
-              {item?.yards} Yards
-            </span>
-
             {/* Image */}
             <div className="w-full h-60 flex items-center justify-center overflow-hidden">
+              {/* Badge */}
+              <span className="absolute top-10 right-9 bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full z-10">
+                {item?.yards} Yards
+              </span>
+
               <img
                 src={item?.url}
                 alt={`${item?.yards} Yard Skip`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-md"
               />
             </div>
 
